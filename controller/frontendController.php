@@ -5,3 +5,29 @@ function displayTravel(){
     $travels = getTravel();
     require 'view/displayTravels.php';
 }
+
+function displayLogin(){
+    require 'view/displayLogin.php';
+}
+
+function displayAddTravel(){
+    require 'view/displayAddTravel.php';
+}
+
+function displayPage(){
+    switch ($_GET['page']) {
+        case 'voyages':
+            displayTravel();
+            break;
+        case 'loginform':
+            displayLogin();
+        break;
+        case 'addtravel':
+            displayAddTravel();
+        break;    
+        
+        default:
+            displayTravel();
+            break;
+    }
+}

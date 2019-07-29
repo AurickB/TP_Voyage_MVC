@@ -1,3 +1,15 @@
 <?php 
 require_once 'controller/frontendController.php';
-displayTravel();
+
+//displayTravel();
+
+//displayLogin();
+
+//displayAddTravel();
+
+if (isset($_GET['page'])){
+    displayPage();
+} else {
+    displayTravel();
+}
+

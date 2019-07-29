@@ -7,7 +7,7 @@ foreach ($travels as $travel){
     echo '<h2>' . $travel['title'] . '</h2></br>';
 
     if ($travel['img'] != null){
-        echo '<img src="' . $travel['img'] . '">' ;
+        echo '<img src="view/' . $travel['img'] . '">' ;
 	}
 	
 	echo '<p>' . $travel['content'].'</p>';
