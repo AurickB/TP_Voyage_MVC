@@ -6,6 +6,6 @@ function getTravel(){
 
     $responce =  $db ->query('SELECT * FROM voyages');
 
-    $travels = $responce->fetchll(PDO :: FETCH_ASSOC);
+    return $travels = $responce->fetchAll(PDO :: FETCH_ASSOC);
 
 }

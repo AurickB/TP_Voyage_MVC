@@ -1,3 +1,3 @@
 <?php 
-require_once 'controller/frontend.php';
-displayTravels();
+require_once 'controller/frontendController.php';
+displayTravel();
