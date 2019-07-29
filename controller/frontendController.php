@@ -14,6 +14,7 @@ function displayAddTravel(){
     require 'view/displayAddTravel.php';
 }
 
+// fonction qui permet d'aafficher la page sélectionnée
 function displayPage(){
     switch ($_GET['page']) {
         case 'voyages':

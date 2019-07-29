@@ -1,7 +1,7 @@
 <?php 
 ob_start();
 ?>
-<form class='w-50' action='index.php' method='post'>
+<form class='w-50' action='' method='post'>
     <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
         <input type="email" class="form-control" name='email' id="email" aria-describedby="emailHelp" placeholder="Enter email">

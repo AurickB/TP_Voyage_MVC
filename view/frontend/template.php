@@ -20,23 +20,23 @@
 	        <a class="nav-link" href="index.php">Parcourir<span class="sr-only">(current)</span></a>
 	      </li>
 	      <?php
-	      //if(!isset($_SESSION['email'])){
+	      if(!isset($_SESSION['mail'])){
 	      ?>
 	      <li class="nav-item">
 	        <a class="nav-link" href="index.php?page=loginform">Se connecter</a>
 	      </li>
 	      <?php
-	  	  //}
-	      //if(isset($_SESSION['email'])){
+	  	  }
+	      if(isset($_SESSION['mail'])){
 	      	?>
 			<li class="nav-item">
 	        	<a class="nav-link" href="index.php?page=addtravel">Ajouter voyage</a>
 	      	</li>
 	      	<li class="nav-item">
-	        	<a href="deconnexion.php" class="btn btn-danger" name="deconnexion">Déconnexion</a>
+	        	<a href="index.php?sk=1" class="btn btn-danger" name="deconnexion">Déconnexion</a>
 	      	</li>
 	      	<?php
-			//}
+			}
 			?>
 	      
 	    </ul>
