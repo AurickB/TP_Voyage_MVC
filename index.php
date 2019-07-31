@@ -16,7 +16,7 @@ else if (isset($_POST['email']) && isset($_POST['password'])){
 } 
 else if (isset($_SESSION['mail']) && isset($_GET['page']) && $_GET['page']== 'deletetravel'){
     require_once 'controller/backendController.php';
-    deleteTravel($_GET['idtravel']);
+    removeTravel($_GET['idtravel']);
 } 
 else if (isset($_GET['page'])){
     displayPage();

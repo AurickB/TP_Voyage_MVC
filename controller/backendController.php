@@ -36,8 +36,8 @@ function addTravel(){
     header ('Location: index.php');
 }
 
-function deleteTravel($id){
-    supTravel($id);
+function removeTravel($id){
+    deleteTravel($id);
     header ('Location: index.php');
 }
 

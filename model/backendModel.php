@@ -27,7 +27,7 @@ function setTravel($voyage){
 	]);
 }
 
-function supTravel($id){
+function deleteTravel($id){
 	$db = connect();
 
 	$sql='DELETE FROM voyages WHERE id = "'.$id.'"';
