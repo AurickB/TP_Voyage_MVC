@@ -1,5 +1,5 @@
 <?php
-require 'bddConfig.php';
+require_once 'bddConfig.php';
 
 function getTravel(){
     $db = connect();

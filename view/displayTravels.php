@@ -11,8 +11,13 @@ foreach ($travels as $travel){
 	}
 	
 	echo '<p>' . $travel['content'].'</p>';
+
+	if (isset($_SESSION['mail'])){
+		echo '<a href="index.php?idtravel='.$travel['id'].'&page=deletetravel">Supprimer voyage</a>';
+	}
 	echo '</div>';
 	echo '</div>';
+
 }
 
 $content = ob_get_clean();

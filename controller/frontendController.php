@@ -1,7 +1,7 @@
 <?php 
 require_once 'model/frontendModel.php';
 
-function displayTravel(){
+function displayTravel($message=null){
     $travels = getTravel();
     require 'view/displayTravels.php';
 }
@@ -14,7 +14,7 @@ function displayAddTravel(){
     require 'view/displayAddTravel.php';
 }
 
-// fonction qui permet d'aafficher la page sélectionnée
+// fonction qui permet d'afficher la page sélectionnée
 function displayPage(){
     switch ($_GET['page']) {
         case 'voyages':
@@ -22,11 +22,14 @@ function displayPage(){
             break;
         case 'loginform':
             displayLogin();
-        break;
+            break;
         case 'addtravel':
-            displayAddTravel();
-        break;    
-        
+            if (isset($_SESSION['mail'])){
+                displayAddTravel();
+            } else {
+                displayLogin();
+            }
+            break;    
         default:
             displayTravel();
             break;

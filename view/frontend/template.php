@@ -7,6 +7,7 @@
 	<meta charset="UTF-8">
 	<title>Voyages</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script type="text/javacript" src="engine1/jquery.js"></script>
 </head>
 <body class="container-fluid">
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -33,7 +34,7 @@
 	        	<a class="nav-link" href="index.php?page=addtravel">Ajouter voyage</a>
 	      	</li>
 	      	<li class="nav-item">
-	        	<a href="index.php?sk=1" class="btn btn-danger" name="deconnexion">Déconnexion</a>
+	        	<a href="index.php?sd=1" class="btn btn-danger" name="deconnexion">Déconnexion</a>
 	      	</li>
 	      	<?php
 			}
