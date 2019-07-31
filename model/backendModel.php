@@ -35,7 +35,7 @@ function deleteTravel($id){
 	$request = $db->prepare($sql);
 
 	$request->execute([
-	
+		$id => htmlentities(strip_tags($id))
 	]);
 }
 ?>
